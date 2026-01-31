@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dl7mh7pqjfnxp" path="res://shaker.gd" id="1_2al81"]
 [ext_resource type="Texture2D" uid="uid://dk1cov3ira2g4" path="res://assets/shaker.png" id="2_f2s7m"]
+[ext_resource type="Texture2D" uid="uid://bqlt3xmwmr620" path="res://assets/white_square.jpg" id="3_kkwqg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2s7m"]
 size = Vector2(42, 117)
@@ -10,8 +11,21 @@ size = Vector2(42, 117)
 script = ExtResource("1_2al81")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=817154686]
+clip_children = 2
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_f2s7m")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Sprite2D" unique_id=1711622642]
+offset_left = -99.99999
+offset_top = -299.99997
+offset_right = 100.00001
+offset_bottom = -99.99997
+scale = Vector2(1.0160444, 2.9221144)
+max_value = 5.0
+fill_mode = 3
+texture_progress = ExtResource("3_kkwqg")
+
+[node name="ResultSprite" type="Sprite2D" parent="." unique_id=133699112]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=679302007]
 position = Vector2(-1, -1.5)

@@ -5,33 +5,44 @@
 [ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="2_85g3d"]
 [ext_resource type="Resource" uid="uid://c5cohp6sntqwy" path="res://resources/drinks/vodka_coke.tres" id="3_choun"]
 [ext_resource type="PackedScene" uid="uid://g5ppbfq0frb" path="res://scenes/bar_ui.tscn" id="3_h2yge"]
-[ext_resource type="Script" uid="uid://dxqteesfoxofg" path="res://scenes/recipe_manager.gd" id="4_jyhfs"]
+[ext_resource type="Resource" uid="uid://xodgy218aic8" path="res://resources/drinks/vodka_soda_lime.tres" id="4_j8jky"]
 [ext_resource type="Resource" uid="uid://b3wh8v4cmru48" path="res://resources/drinks/mohito.tres" id="4_ya4ey"]
 [ext_resource type="Resource" uid="uid://b1wrgbsyx7iio" path="res://resources/drinks/long_island_ice_tea.tres" id="5_eb6dy"]
+[ext_resource type="Resource" uid="uid://dorg1q6x1swex" path="res://resources/drinks/whiskey_coke.tres" id="5_kmb1v"]
+[ext_resource type="Resource" uid="uid://dt5u8bew78j4d" path="res://resources/drinks/whiskey_ginger_ale.tres" id="6_fuf3a"]
 [ext_resource type="Script" uid="uid://ckq3cuevov7bo" path="res://scripts/recipe_library.gd" id="6_trceg"]
+[ext_resource type="Resource" uid="uid://bnwqssgix4nn6" path="res://resources/drinks/whiskey_on_the_rocks.tres" id="7_pibwh"]
+[ext_resource type="Script" uid="uid://dnqnmlkfb3mbe" path="res://scenes/camera_2d.gd" id="8_yq6so"]
+[ext_resource type="Resource" uid="uid://7r5i7mflrmqs" path="res://resources/drinks/espresso_martini.tres" id="10_kmb1v"]
 [ext_resource type="PackedScene" uid="uid://cqj71qnuefl5w" path="res://scenes/shaker.tscn" id="10_ya4ey"]
 [ext_resource type="PackedScene" uid="uid://cua8570fwka16" path="res://scenes/bottle.tscn" id="11_eb6dy"]
 [ext_resource type="Texture2D" uid="uid://v0u7bi636hxn" path="res://assets/vodka.png" id="11_jbj1t"]
 [ext_resource type="Texture2D" uid="uid://cf0ber6i12kyk" path="res://assets/gin.png" id="12_muem4"]
 [ext_resource type="Texture2D" uid="uid://t7rn41r4b5qg" path="res://assets/rum.png" id="13_dp3eg"]
 [ext_resource type="Texture2D" uid="uid://dw71oyhxgoca6" path="res://assets/tequila.png" id="14_0ld40"]
-[ext_resource type="Texture2D" uid="uid://2qsu7yd2nd2q" path="res://assets/whisky.webp" id="16_muem4"]
+[ext_resource type="PackedScene" uid="uid://dgqkvwpvtl7wd" path="res://scenes/summary_layer.tscn" id="14_fuf3a"]
+[ext_resource type="Texture2D" uid="uid://cjqf17lvl8n4b" path="res://assets/shelf.png" id="16_fuf3a"]
+[ext_resource type="Texture2D" uid="uid://2qsu7yd2nd2q" path="res://assets/whiskey.webp" id="16_muem4"]
 [ext_resource type="Texture2D" uid="uid://bqvt84dsoumtw" path="res://assets/triple_sec.webp" id="16_yc10j"]
+[ext_resource type="Texture2D" uid="uid://cuhovjdrgusnn" path="res://assets/ice_well.png" id="17_c6pm6"]
+[ext_resource type="Texture2D" uid="uid://nktywo2ll6ed" path="res://assets/bar_wood.png" id="17_pibwh"]
+[ext_resource type="Texture2D" uid="uid://brhit1jirb0bo" path="res://assets/ice_crusher.png" id="18_5he1u"]
+[ext_resource type="Texture2D" uid="uid://crvjdx2syfitl" path="res://assets/tray.png" id="18_c6pm6"]
 [ext_resource type="Texture2D" uid="uid://b225cjn36qq4w" path="res://assets/coke.png" id="18_yc10j"]
 [ext_resource type="Texture2D" uid="uid://xib81yud7jaq" path="res://assets/sprite.png" id="19_jscy8"]
+[ext_resource type="Texture2D" uid="uid://rhy7dov2y1nb" path="res://assets/kahlua.png" id="20_fv21b"]
 [ext_resource type="Texture2D" uid="uid://ih0fnnnyjalv" path="res://assets/soda.png" id="20_pm3ni"]
 [ext_resource type="Texture2D" uid="uid://da76dfwhbi32g" path="res://assets/ginger_ale.png" id="21_y6deb"]
 [ext_resource type="PackedScene" uid="uid://ciywfecfvavyx" path="res://scenes/ingredient_item.tscn" id="22_jscy8"]
-[ext_resource type="Texture2D" uid="uid://yldigi0uipvo" path="res://assets/ice.png" id="23_2wyq8"]
 [ext_resource type="Texture2D" uid="uid://4aa0ms8ktshu" path="res://assets/crushed_ice.png" id="23_pm3ni"]
 [ext_resource type="Texture2D" uid="uid://c412ujtu82m17" path="res://assets/lime.png" id="24_og1vs"]
 [ext_resource type="Texture2D" uid="uid://i7ksdyyufvyb" path="res://assets/mint.png" id="25_2wyq8"]
+[ext_resource type="Texture2D" uid="uid://cyv7grvjv7qfx" path="res://assets/white_rum.png" id="27_vxglm"]
+[ext_resource type="Texture2D" uid="uid://52sx6es6wn53" path="res://assets/sugar.png" id="28_2f3dj"]
+[ext_resource type="Texture2D" uid="uid://c68tuor1jjn3i" path="res://assets/coffee.png" id="31_tel4y"]
+[ext_resource type="Texture2D" uid="uid://gdwgvhyalu6p" path="res://assets/salt.webp" id="40_5poiv"]
 
 [sub_resource type="Resource" id="Resource_muem4"]
-script = ExtResource("6_trceg")
-metadata/_custom_type_script = "uid://ckq3cuevov7bo"
-
-[sub_resource type="Resource" id="Resource_85g3d"]
 script = ExtResource("6_trceg")
 metadata/_custom_type_script = "uid://ckq3cuevov7bo"
 
@@ -40,19 +51,100 @@ script = ExtResource("1_ig7tw")
 recipe_library = SubResource("Resource_muem4")
 docket_scene = ExtResource("2_0xm2m")
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1324038466]
+anchor_mode = 0
+script = ExtResource("8_yq6so")
+
+[node name="Bar" type="Node2D" parent="." unique_id=1854393301]
+
+[node name="BarCounter" type="TextureRect" parent="Bar" unique_id=292917229]
+offset_left = -4.0
+offset_top = -39.0
+offset_right = 636.0
+offset_bottom = 320.0
+scale = Vector2(1.8523691, 1.9257993)
+texture = ExtResource("17_pibwh")
+expand_mode = 1
+
+[node name="Shelf1" type="TextureRect" parent="Bar" unique_id=1683150807]
+offset_left = 736.0
+offset_top = 266.0
+offset_right = 1216.0
+offset_bottom = 469.0
+texture = ExtResource("16_fuf3a")
+
+[node name="Shelf2" type="TextureRect" parent="Bar" unique_id=611401654]
+offset_left = 790.0
+offset_top = 68.0
+offset_right = 1270.0
+offset_bottom = 271.0
+texture = ExtResource("16_fuf3a")
+
+[node name="Shelf3" type="TextureRect" parent="Bar" unique_id=402838694]
+offset_left = -28.0
+offset_top = 189.0
+offset_right = 452.0
+offset_bottom = 392.0
+texture = ExtResource("16_fuf3a")
+
+[node name="TextureRect" type="TextureRect" parent="Bar" unique_id=121399814]
+offset_left = 797.9999
+offset_top = 374.99997
+offset_right = 1297.9999
+offset_bottom = 875.0
+scale = Vector2(0.635589, 0.635589)
+texture = ExtResource("18_c6pm6")
+
+[node name="IceWell" type="TextureRect" parent="Bar" unique_id=928004593]
+offset_left = 110.0
+offset_top = 370.0
+offset_right = 710.0
+offset_bottom = 752.0
+scale = Vector2(0.6560741, 0.6560741)
+texture = ExtResource("17_c6pm6")
+
+[node name="IceCrusher" type="TextureRect" parent="Bar" unique_id=1511688905]
+offset_left = -42.999996
+offset_top = 316.99997
+offset_right = 557.0
+offset_bottom = 917.0
+scale = Vector2(0.38290226, 0.38290226)
+texture = ExtResource("18_5he1u")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1785671531]
+
+[node name="RedFlashRect" type="ColorRect" parent="CanvasLayer" unique_id=1002090605]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 0, 1)
+
+[node name="ShiftTimerLabel" type="Label" parent="." unique_id=1570967822]
+offset_left = 1047.0
+offset_top = 13.0
+offset_right = 1087.0
+offset_bottom = 41.0
+theme_override_font_sizes/font_size = 20
+
+[node name="SummaryLayer" parent="." unique_id=79782660 instance=ExtResource("14_fuf3a")]
+
+[node name="ColorRect" parent="SummaryLayer/SummaryUI" parent_id_path=PackedInt32Array(79782660, 1648679984) index="0" unique_id=1802344891]
+visible = true
+
 [node name="BarUI" parent="." unique_id=474163426 instance=ExtResource("3_h2yge")]
 
 [node name="OrderSpawnTimer" type="Timer" parent="." unique_id=1855301179]
 autostart = true
 
-[node name="RecipeManager" type="Node" parent="." unique_id=1020672275]
-script = ExtResource("4_jyhfs")
-library = SubResource("Resource_85g3d")
-
 [node name="Shaker" parent="." unique_id=1212667216 instance=ExtResource("10_ya4ey")]
-position = Vector2(545, 479)
+position = Vector2(604, 427)
+scale = Vector2(2, 2)
 
 [node name="Spirits" type="Node2D" parent="." unique_id=382565905]
+position = Vector2(89, 106)
 
 [node name="Vodka" parent="Spirits" unique_id=719493021 instance=ExtResource("11_eb6dy")]
 position = Vector2(662, 322)
@@ -63,72 +155,102 @@ position = Vector2(742, 322)
 ingredient_name = "Gin"
 bottle_texture = ExtResource("12_muem4")
 
+[node name="White Rum" parent="Spirits" unique_id=1227688266 instance=ExtResource("11_eb6dy")]
+position = Vector2(815, 322)
+ingredient_name = "White Rum"
+bottle_texture = ExtResource("27_vxglm")
+
 [node name="Rum" parent="Spirits" unique_id=1911485980 instance=ExtResource("11_eb6dy")]
-position = Vector2(827, 322)
+position = Vector2(888, 322)
 ingredient_name = "Rum"
 bottle_texture = ExtResource("13_dp3eg")
 
 [node name="Tequila" parent="Spirits" unique_id=1764919817 instance=ExtResource("11_eb6dy")]
-position = Vector2(913, 323)
+position = Vector2(955, 323)
 ingredient_name = "Tequila"
 bottle_texture = ExtResource("14_0ld40")
 
 [node name="Whisky" parent="Spirits" unique_id=215005750 instance=ExtResource("11_eb6dy")]
-position = Vector2(991, 323)
-ingredient_name = "Whisky"
+position = Vector2(1031, 323)
+ingredient_name = "Whiskey"
 bottle_texture = ExtResource("16_muem4")
 
 [node name="Triple Sec" parent="Spirits" unique_id=172348616 instance=ExtResource("11_eb6dy")]
-position = Vector2(1067, 321)
+position = Vector2(826, 103)
 ingredient_name = "Triple Sec"
 bottle_texture = ExtResource("16_yc10j")
 
+[node name="Kahlua" parent="Spirits" unique_id=52967766 instance=ExtResource("11_eb6dy")]
+position = Vector2(742, 106)
+ingredient_name = "Kahlua"
+bottle_texture = ExtResource("20_fv21b")
+
 [node name="Mixers" type="Node2D" parent="." unique_id=1157415290]
+position = Vector2(175, 189)
+scale = Vector2(0.5, 0.5)
 
 [node name="Coke" parent="Mixers" unique_id=495524397 instance=ExtResource("11_eb6dy")]
-position = Vector2(449, 325)
-scale = Vector2(0.2, 0.2)
+position = Vector2(445, 322)
 ingredient_name = "Coke"
 bottle_texture = ExtResource("18_yc10j")
 
 [node name="Sprite" parent="Mixers" unique_id=1842777288 instance=ExtResource("11_eb6dy")]
-position = Vector2(368, 322)
+position = Vector2(330, 322)
 ingredient_name = "Sprite"
 bottle_texture = ExtResource("19_jscy8")
 
 [node name="Soda" parent="Mixers" unique_id=1061356822 instance=ExtResource("11_eb6dy")]
-position = Vector2(289, 321)
+position = Vector2(232, 320)
 ingredient_name = "Soda"
 bottle_texture = ExtResource("20_pm3ni")
 
 [node name="Ginger Ale" parent="Mixers" unique_id=1608440885 instance=ExtResource("11_eb6dy")]
-position = Vector2(204, 323)
+position = Vector2(112, 324)
 ingredient_name = "Ginger Ale"
 bottle_texture = ExtResource("21_y6deb")
 
 [node name="Ingredients" type="Node2D" parent="." unique_id=1713844214]
 
 [node name="Ice" parent="Ingredients" unique_id=1569167912 instance=ExtResource("22_jscy8")]
-position = Vector2(713, 512)
-scale = Vector2(0.3, 0.3)
-item_texture = ExtResource("23_2wyq8")
+position = Vector2(301.00003, 485.00003)
+scale = Vector2(0.9139626, 0.9139626)
 
 [node name="Crushed Ice" parent="Ingredients" unique_id=1642615502 instance=ExtResource("22_jscy8")]
-position = Vector2(803, 517)
-scale = Vector2(0.25, 0.25)
+position = Vector2(56, 451)
+scale = Vector2(0.48233217, 0.48233217)
 ingredient_name = "Crushed Ice"
 item_texture = ExtResource("23_pm3ni")
 
 [node name="Lime" parent="Ingredients" unique_id=723590600 instance=ExtResource("22_jscy8")]
-position = Vector2(885, 517)
-scale = Vector2(0.25, 0.25)
+position = Vector2(1073, 564)
+scale = Vector2(0.5, 0.5)
 ingredient_name = "Lime"
 item_texture = ExtResource("24_og1vs")
 
 [node name="Mint" parent="Ingredients" unique_id=88750446 instance=ExtResource("22_jscy8")]
-position = Vector2(969, 517)
-scale = Vector2(0.25, 0.25)
+position = Vector2(1038, 467)
+scale = Vector2(0.5, 0.5)
 ingredient_name = "Mint"
 item_texture = ExtResource("25_2wyq8")
 
+[node name="Sugar" parent="Ingredients" unique_id=1483285734 instance=ExtResource("22_jscy8")]
+position = Vector2(921, 471)
+scale = Vector2(0.25, 0.25)
+ingredient_name = "Sugar"
+item_texture = ExtResource("28_2f3dj")
+
+[node name="Salt" parent="Ingredients" unique_id=419442421 instance=ExtResource("22_jscy8")]
+position = Vector2(864, 498)
+ingredient_name = "Salt"
+item_texture = ExtResource("40_5poiv")
+
+[node name="Coffee" parent="Ingredients" unique_id=892395364 instance=ExtResource("22_jscy8")]
+position = Vector2(949.00006, 560)
+scale = Vector2(0.57167315, 0.57167315)
+ingredient_name = "Coffee"
+item_texture = ExtResource("31_tel4y")
+
+[connection signal="pressed" from="SummaryLayer/SummaryUI/Panel/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="timeout" from="OrderSpawnTimer" to="." method="_on_order_spawn_timer_timeout"]
+
+[editable path="SummaryLayer"]

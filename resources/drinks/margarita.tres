@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://ckiyn6l20ayq7"]
+
+[ext_resource type="Texture2D" uid="uid://4xkk3m6depwl" path="res://assets/margarita.png" id="1_b6hqx"]
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="1_eyna5"]
+
+[resource]
+script = ExtResource("1_eyna5")
+drink_name = "Margarita"
+ingredients = Array[String](["Lime", "Ice", "Tequilla", "Triple Sec", "Salt"])
+difficulty = 3
+base_time_limit = 60.0
+icon = ExtResource("1_b6hqx")
+metadata/_custom_type_script = "uid://ln8m4be57rdg"

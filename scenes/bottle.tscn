@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a0avw"]
 size = Vector2(56, 201)
 
-[node name="Bottle" type="Area2D" unique_id=719493021]
+[node name="Bottle" type="Area2D" unique_id=719493021 groups=["draggables"]]
 script = ExtResource("1_724mw")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1298498853]

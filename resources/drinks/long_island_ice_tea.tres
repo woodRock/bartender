@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://b1wrgbsyx7iio"]
 
+[ext_resource type="Texture2D" uid="uid://dr8sy8q4778gc" path="res://assets/long_island_ice_tea.png" id="1_edrvi"]
 [ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="1_jcga1"]
 
 [resource]
@@ -8,4 +9,5 @@ drink_name = "Long Island Ice Tea"
 ingredients = Array[String](["Crushed Ice", "Gin", "Vodka", "Tequila", "Rum", "Triple Sec", "Lime", "Coke"])
 difficulty = 3
 base_time_limit = 60.0
+icon = ExtResource("1_edrvi")
 metadata/_custom_type_script = "uid://ln8m4be57rdg"

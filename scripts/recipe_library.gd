@@ -3,8 +3,13 @@ class_name RecipeLibrary
 
 @export var all_recipes: Array[DrinkRecipe] = [
 	preload("res://resources/drinks/vodka_coke.tres"),
+	preload("res://resources/drinks/vodka_soda_lime.tres"), 
+	preload("res://resources/drinks/whiskey_coke.tres"),  
+	preload("res://resources/drinks/whiskey_ginger_ale.tres"), 
+	preload("res://resources/drinks/whiskey_on_the_rocks.tres"),
 	preload("res://resources/drinks/mohito.tres"),
-	preload("res://resources/drinks/long_island_ice_tea.tres")
+	preload("res://resources/drinks/long_island_ice_tea.tres"),
+	preload("res://resources/drinks/espresso_martini.tres")
 ]
 
 func get_recipes_by_difficulty(max_difficulty: int) -> Array[DrinkRecipe]:

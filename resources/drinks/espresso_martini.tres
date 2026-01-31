@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://7r5i7mflrmqs"]
+
+[ext_resource type="Texture2D" uid="uid://dst08bvt7b5ni" path="res://assets/espressor_martini.png" id="1_euujg"]
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="2_ikl8n"]
+
+[resource]
+script = ExtResource("2_ikl8n")
+drink_name = "Espresso Martini"
+ingredients = Array[String](["Coffee", "Vodka", "Kahlua", "Ice"])
+difficulty = 3
+base_time_limit = 60.0
+icon = ExtResource("1_euujg")
+metadata/_custom_type_script = "uid://ln8m4be57rdg"

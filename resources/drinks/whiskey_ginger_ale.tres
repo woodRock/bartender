@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://dt5u8bew78j4d"]
+
+[ext_resource type="Texture2D" uid="uid://cdqwpdvkg8ibc" path="res://assets/whiskey_ginger_ale.webp" id="1_duyai"]
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="1_ltgvm"]
+
+[resource]
+script = ExtResource("1_ltgvm")
+drink_name = "Whiskey Ginger Ale"
+ingredients = Array[String](["Ice", "Whiskey", "Ginger Ale"])
+icon = ExtResource("1_duyai")
+metadata/_custom_type_script = "uid://ln8m4be57rdg"

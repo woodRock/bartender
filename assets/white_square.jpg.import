@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2qsu7yd2nd2q"
-path="res://.godot/imported/whisky.webp-49eb5754f3378760e0dbe3981cefb7e4.ctex"
+uid="uid://bqlt3xmwmr620"
+path="res://.godot/imported/white_square.jpg-08f8e06b80076e6426e4e7921bdc7f6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/whisky.webp"
-dest_files=["res://.godot/imported/whisky.webp-49eb5754f3378760e0dbe3981cefb7e4.ctex"]
+source_file="res://assets/white_square.jpg"
+dest_files=["res://.godot/imported/white_square.jpg-08f8e06b80076e6426e4e7921bdc7f6c.ctex"]
 
 [params]
 
