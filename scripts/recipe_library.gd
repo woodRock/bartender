@@ -8,7 +8,7 @@ class_name RecipeLibrary
 ]
 
 func get_recipes_by_difficulty(max_difficulty: int) -> Array[DrinkRecipe]:
-	var valid_drinks = []
+	var valid_drinks: Array[DrinkRecipe] = []
 	for recipe in all_recipes:
 		if recipe.difficulty <= max_difficulty:
 			valid_drinks.append(recipe)

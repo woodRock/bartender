@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cqj71qnuefl5w"]
+
+[ext_resource type="Script" uid="uid://dl7mh7pqjfnxp" path="res://shaker.gd" id="1_2al81"]
+[ext_resource type="Texture2D" uid="uid://dk1cov3ira2g4" path="res://assets/shaker.png" id="2_f2s7m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2s7m"]
+size = Vector2(42, 117)
+
+[node name="Shaker" type="Area2D" unique_id=1212667216 groups=["shaker"]]
+script = ExtResource("1_2al81")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=817154686]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_f2s7m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=679302007]
+position = Vector2(-1, -1.5)
+shape = SubResource("RectangleShape2D_f2s7m")
+
+[node name="Label" type="Label" parent="." unique_id=1607565019]
+offset_right = 40.0
+offset_bottom = 23.0

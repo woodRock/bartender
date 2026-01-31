@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cua8570fwka16"]
+
+[ext_resource type="Script" uid="uid://p11jt7n6qang" path="res://scenes/bottle.gd" id="1_724mw"]
+[ext_resource type="Texture2D" uid="uid://v0u7bi636hxn" path="res://assets/vodka.png" id="2_qr18b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a0avw"]
+size = Vector2(56, 201)
+
+[node name="Bottle" type="Area2D" unique_id=719493021]
+script = ExtResource("1_724mw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1298498853]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qr18b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=267468521]
+position = Vector2(-1, -1.5)
+shape = SubResource("RectangleShape2D_a0avw")
