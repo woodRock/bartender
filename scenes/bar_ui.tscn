@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://g5ppbfq0frb"]
+
+[node name="BarUI" type="Node2D" unique_id=474163426]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1040624962]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1385358740]
+offset_right = 40.0
+offset_bottom = 40.0

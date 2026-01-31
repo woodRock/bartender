@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://c5cohp6sntqwy"]
+
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="1_qdy8r"]
+
+[resource]
+script = ExtResource("1_qdy8r")
+drink_name = "Vodka Coke"
+ingredients = Array[String](["Ice", "Vodka", "Coke"])
+metadata/_custom_type_script = "uid://ln8m4be57rdg"

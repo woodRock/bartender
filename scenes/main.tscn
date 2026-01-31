@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://ox5feb8l1352"]
+
+[ext_resource type="Script" uid="uid://rwbunlt4j7jo" path="res://scripts/bar_manager.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://chrhlprsrd0uw" path="res://scenes/order_docket.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="2_85g3d"]
+[ext_resource type="Resource" uid="uid://c5cohp6sntqwy" path="res://resources/drinks/vodka_coke.tres" id="3_choun"]
+[ext_resource type="PackedScene" uid="uid://g5ppbfq0frb" path="res://scenes/bar_ui.tscn" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://dxqteesfoxofg" path="res://scenes/recipe_manager.gd" id="4_jyhfs"]
+[ext_resource type="Resource" uid="uid://b3wh8v4cmru48" path="res://resources/drinks/mohito.tres" id="4_ya4ey"]
+[ext_resource type="Resource" uid="uid://b1wrgbsyx7iio" path="res://resources/drinks/long_island_ice_tea.tres" id="5_eb6dy"]
+[ext_resource type="Script" uid="uid://ckq3cuevov7bo" path="res://scripts/recipe_library.gd" id="6_trceg"]
+
+[sub_resource type="Resource" id="Resource_a8y0u"]
+script = ExtResource("6_trceg")
+metadata/_custom_type_script = "uid://ckq3cuevov7bo"
+
+[sub_resource type="Resource" id="Resource_85g3d"]
+script = ExtResource("6_trceg")
+metadata/_custom_type_script = "uid://ckq3cuevov7bo"
+
+[node name="main" type="Node2D" unique_id=244084653]
+script = ExtResource("1_ig7tw")
+recipe_library = SubResource("Resource_a8y0u")
+docket_scene = ExtResource("2_0xm2m")
+
+[node name="BarUI" parent="." unique_id=474163426 instance=ExtResource("3_h2yge")]
+
+[node name="OrderSpawnTimer" type="Timer" parent="." unique_id=1855301179]
+autostart = true
+
+[node name="RecipeManager" type="Node" parent="." unique_id=1020672275]
+script = ExtResource("4_jyhfs")
+library = SubResource("Resource_85g3d")
