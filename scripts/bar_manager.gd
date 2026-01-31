@@ -109,6 +109,9 @@ func _try_grab_closest_item():
 		grabbed_item.dragging = true
 		grabbed_item.z_index = 100 # Pop to foreground
 		
+		if grabbed_item.has_method("pick_up"):
+			grabbed_item.pick_up()
+		
 		# Feedback tween when picked up
 		var t = create_tween()
 		t.tween_property(grabbed_item, "scale", Vector2(1.1, 1.1), 0.1)
