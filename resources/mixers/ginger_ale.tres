@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://1geyl4mcq6ft"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_mkrma"]
+[ext_resource type="Texture2D" uid="uid://da76dfwhbi32g" path="res://assets/sprites/items/mixers/ginger_ale.png" id="2_agmji"]
+
+[resource]
+script = ExtResource("1_mkrma")
+name = "Ginger Ale"
+type = "Mixer"
+texture = ExtResource("2_agmji")
+color = Color(0.68455034, 0.26881373, 0.086001225, 1)
+is_can = true
+metadata/_custom_type_script = "uid://dygudbfda3sex"

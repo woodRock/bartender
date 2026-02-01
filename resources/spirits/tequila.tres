@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://dg5q7044ljbxh"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_qfgg8"]
+[ext_resource type="Texture2D" uid="uid://dw71oyhxgoca6" path="res://assets/sprites/items/spirits/tequila.png" id="2_b10xu"]
+
+[resource]
+script = ExtResource("1_qfgg8")
+name = "Tequila"
+texture = ExtResource("2_b10xu")
+color = Color(0.9219129, 0.9135995, 0.25506386, 1)
+metadata/_custom_type_script = "uid://dygudbfda3sex"

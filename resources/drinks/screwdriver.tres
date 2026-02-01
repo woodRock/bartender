@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://c3itckfyp3y6f"]
+
+[ext_resource type="Texture2D" uid="uid://7x0kfkdhjla5" path="res://assets/sprites/items/drinks/screwdriver.png" id="1_qw5s6"]
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/resources/drink_recipe.gd" id="1_w3ech"]
+
+[resource]
+script = ExtResource("1_w3ech")
+drink_name = "Screwdriver"
+ingredients = Array[String](["Ice", "Vodka", "Orange"])
+icon = ExtResource("1_qw5s6")
+metadata/_custom_type_script = "uid://ln8m4be57rdg"

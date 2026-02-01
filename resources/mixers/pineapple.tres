@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="IngredientData" format=3 uid="uid://pmb8ynbmegru"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_77uq6"]
+[ext_resource type="Texture2D" uid="uid://cpcdpdb4hhyeg" path="res://assets/sprites/items/mixers/pineapple.png" id="2_nxdfv"]
+
+[resource]
+script = ExtResource("1_77uq6")
+name = "Pineapple"
+type = "Mixer"
+texture = ExtResource("2_nxdfv")
+color = Color(1, 0.9607843, 0.2784314, 1)
+initial_scale = Vector2(2, 2)
+metadata/_custom_type_script = "uid://dygudbfda3sex"

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://chrhlprsrd0uw"]
 
 [ext_resource type="Script" uid="uid://jwefm7o55lw3" path="res://scenes/order_docket.gd" id="1_ojw0x"]
-[ext_resource type="Texture2D" uid="uid://l4qhg5efr8jj" path="res://assets/docket.png" id="2_b4msm"]
+[ext_resource type="Texture2D" uid="uid://l4qhg5efr8jj" path="res://assets/sprites/environment/docket.png" id="2_b4msm"]
 
 [node name="OrderDocket" type="PanelContainer" unique_id=542572494]
 anchors_preset = 15

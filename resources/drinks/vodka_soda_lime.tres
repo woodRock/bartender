@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://xodgy218aic8"]
 
-[ext_resource type="Texture2D" uid="uid://d3jq1kh8p0m5m" path="res://assets/vodka_soda_lime.png" id="1_kyfk6"]
-[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="1_rxfcn"]
+[ext_resource type="Texture2D" uid="uid://d3jq1kh8p0m5m" path="res://assets/sprites/items/drinks/vodka_soda_lime.png" id="1_kyfk6"]
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/resources/drink_recipe.gd" id="1_rxfcn"]
 
 [resource]
 script = ExtResource("1_rxfcn")

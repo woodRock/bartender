@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cua8570fwka16"]
 
 [ext_resource type="Script" uid="uid://p11jt7n6qang" path="res://scenes/bottle.gd" id="1_724mw"]
-[ext_resource type="Texture2D" uid="uid://v0u7bi636hxn" path="res://assets/vodka.png" id="2_qr18b"]
+[ext_resource type="Texture2D" uid="uid://v0u7bi636hxn" path="res://assets/sprites/items/spirits/vodka.png" id="2_qr18b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a0avw"]
 size = Vector2(56, 201)

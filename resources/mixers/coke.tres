@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="IngredientData" format=3 uid="uid://cy3bpteg2dp3v"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_jm8pi"]
+[ext_resource type="Texture2D" uid="uid://b225cjn36qq4w" path="res://assets/sprites/items/mixers/coke.png" id="2_4mqdk"]
+
+[resource]
+script = ExtResource("1_jm8pi")
+name = "Coke"
+type = "Mixer"
+texture = ExtResource("2_4mqdk")
+color = Color(0.5392888, 0.26642162, 0.049878754, 1)
+is_can = true
+metadata/_custom_type_script = "uid://dygudbfda3sex"

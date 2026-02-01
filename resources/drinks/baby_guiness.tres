@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://3yrdtk3lfnxl"]
+
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/resources/drink_recipe.gd" id="1_iuekn"]
+[ext_resource type="Texture2D" uid="uid://dq7tnnd7qx1cn" path="res://assets/sprites/items/drinks/baby_guinness.png" id="1_mrfms"]
+
+[resource]
+script = ExtResource("1_iuekn")
+drink_name = "Baby Guiness"
+ingredients = Array[String](["Kahlua", "Baileys"])
+difficulty = 2
+base_time_limit = 40.0
+icon = ExtResource("1_mrfms")
+metadata/_custom_type_script = "uid://ln8m4be57rdg"

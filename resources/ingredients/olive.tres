@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="IngredientData" format=3 uid="uid://b325ii5iy5jcm"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_p08up"]
+[ext_resource type="Texture2D" uid="uid://wjpb4x20gtqp" path="res://assets/sprites/items/ingredients/olive.webp" id="2_plov7"]
+
+[resource]
+script = ExtResource("1_p08up")
+name = "Olive"
+type = "Ingredient"
+texture = ExtResource("2_plov7")
+metadata/_custom_type_script = "uid://dygudbfda3sex"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://sw8fsgocfojy"]
+
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/resources/drink_recipe.gd" id="1_0w5in"]
+[ext_resource type="Texture2D" uid="uid://d24yd36owkn6w" path="res://assets/sprites/items/drinks/black_russian.webp" id="1_7ecyv"]
+
+[resource]
+script = ExtResource("1_0w5in")
+drink_name = "Black Russian"
+ingredients = Array[String](["Ice", "Vodka", "Kahlua"])
+icon = ExtResource("1_7ecyv")
+metadata/_custom_type_script = "uid://ln8m4be57rdg"

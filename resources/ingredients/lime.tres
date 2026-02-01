@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://dx53rlsitrfdq"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_kv37v"]
+[ext_resource type="Texture2D" uid="uid://c412ujtu82m17" path="res://assets/sprites/items/ingredients/lime.png" id="2_iystu"]
+
+[resource]
+script = ExtResource("1_kv37v")
+name = "Lime"
+type = "Ingredient"
+texture = ExtResource("2_iystu")
+color = Color(0.42352942, 0.8156863, 0, 1)
+metadata/_custom_type_script = "uid://dygudbfda3sex"

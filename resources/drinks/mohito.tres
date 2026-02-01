@@ -1,13 +1,13 @@
 [gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://b3wh8v4cmru48"]
 
-[ext_resource type="Texture2D" uid="uid://clafm5jyhs1i4" path="res://assets/mohito.png" id="1_c0ebu"]
-[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="1_qiert"]
+[ext_resource type="Texture2D" uid="uid://clafm5jyhs1i4" path="res://assets/sprites/items/drinks/mohito.png" id="1_c0ebu"]
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/resources/drink_recipe.gd" id="1_qiert"]
 
 [resource]
 script = ExtResource("1_qiert")
 drink_name = "Mohito"
 ingredients = Array[String](["Lime", "Sugar", "Crushed Ice", "White Rum", "Soda", "Mint"])
-difficulty = 3
+difficulty = 4
 base_time_limit = 60.0
 icon = ExtResource("1_c0ebu")
 metadata/_custom_type_script = "uid://ln8m4be57rdg"

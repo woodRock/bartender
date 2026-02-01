@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://bkl4qeiwhejph"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_1wxx3"]
+[ext_resource type="Texture2D" uid="uid://ih0fnnnyjalv" path="res://assets/sprites/items/mixers/soda.png" id="2_hhbkx"]
+
+[resource]
+script = ExtResource("1_1wxx3")
+name = "Soda"
+type = "Mixer"
+texture = ExtResource("2_hhbkx")
+is_can = true
+metadata/_custom_type_script = "uid://dygudbfda3sex"

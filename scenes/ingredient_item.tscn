@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ciywfecfvavyx"]
 
 [ext_resource type="Script" uid="uid://dx8shtpgt3334" path="res://scenes/ingredient_item.gd" id="1_c1lhp"]
-[ext_resource type="Texture2D" uid="uid://yldigi0uipvo" path="res://assets/ice.png" id="1_xrvfr"]
+[ext_resource type="Texture2D" uid="uid://yldigi0uipvo" path="res://assets/sprites/items/ingredients/ice.png" id="1_xrvfr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a6ps0"]
 size = Vector2(253, 227)

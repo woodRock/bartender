@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://cb0leahfwlnye"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_x61rg"]
+[ext_resource type="Texture2D" uid="uid://cf0ber6i12kyk" path="res://assets/sprites/items/spirits/gin.png" id="2_vulf6"]
+
+[resource]
+script = ExtResource("1_x61rg")
+name = "Gin"
+texture = ExtResource("2_vulf6")
+metadata/_custom_type_script = "uid://dygudbfda3sex"

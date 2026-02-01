@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://c8w3hk6nemdgv"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_3v84h"]
+[ext_resource type="Texture2D" uid="uid://t7rn41r4b5qg" path="res://assets/sprites/items/spirits/rum.png" id="2_7sd7t"]
+
+[resource]
+script = ExtResource("1_3v84h")
+name = "Rum"
+texture = ExtResource("2_7sd7t")
+color = Color(0.8930965, 0.38725775, 0.1627945, 1)
+metadata/_custom_type_script = "uid://dygudbfda3sex"

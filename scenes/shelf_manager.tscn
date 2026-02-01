@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b8utitnma6880"]
+
+[ext_resource type="Script" uid="uid://bne7qdgnblydv" path="res://scenes/shelf_manager.gd" id="1_dempa"]
+[ext_resource type="PackedScene" uid="uid://ciywfecfvavyx" path="res://scenes/ingredient_item.tscn" id="2_mpq7f"]
+
+[node name="ShelfManager" type="Node2D" unique_id=955594086]
+position = Vector2(-184, -328)
+script = ExtResource("1_dempa")
+ingredient_item_scene = ExtResource("2_mpq7f")
+spirit_columns = 6
+spirit_spacing = Vector2(60, 200)
+mixer_spacing = 40.0
+circle_radius = 60.0
+
+[node name="SpiritsAnchor" type="Marker2D" parent="." unique_id=553346776]
+position = Vector2(942, 768)
+
+[node name="IngredientsAnchor" type="Marker2D" parent="." unique_id=2088565332]
+position = Vector2(1150, 900)
+
+[node name="MixersAnchor" type="Marker2D" parent="." unique_id=403240809]
+position = Vector2(318, 671)
+
+[node name="LiqueursAnchor" type="Marker2D" parent="." unique_id=833277070]
+position = Vector2(933, 564)

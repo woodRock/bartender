@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="IngredientData" format=3 uid="uid://bi1xn1si1k3b5"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_6vcku"]
+[ext_resource type="Texture2D" uid="uid://c68tuor1jjn3i" path="res://assets/sprites/items/ingredients/coffee.png" id="2_7k1aj"]
+
+[resource]
+script = ExtResource("1_6vcku")
+name = "Coffee"
+type = "Ingredient"
+texture = ExtResource("2_7k1aj")
+color = Color(0.61283267, 0.3671305, 0.26284638, 1)
+initial_scale = Vector2(0.5, 0.5)
+metadata/_custom_type_script = "uid://dygudbfda3sex"

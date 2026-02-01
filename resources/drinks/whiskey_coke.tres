@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://dorg1q6x1swex"]
 
-[ext_resource type="Texture2D" uid="uid://8cd1mspft7nm" path="res://assets/whiskey_coke.webp" id="1_g61el"]
-[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="1_vwmog"]
+[ext_resource type="Texture2D" uid="uid://8cd1mspft7nm" path="res://assets/sprites/items/drinks/whiskey_coke.webp" id="1_g61el"]
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/resources/drink_recipe.gd" id="1_vwmog"]
 
 [resource]
 script = ExtResource("1_vwmog")

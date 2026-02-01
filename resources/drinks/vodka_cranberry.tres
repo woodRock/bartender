@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://iodqmb3irvjb"]
+
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/resources/drink_recipe.gd" id="1_pwgtr"]
+[ext_resource type="Texture2D" uid="uid://csxajypc2ubxo" path="res://assets/sprites/items/drinks/vodka_cranberry.webp" id="1_voxhc"]
+
+[resource]
+script = ExtResource("1_pwgtr")
+drink_name = "Vodka Cranberry"
+ingredients = Array[String](["Ice", "Vodka", "Cranberry"])
+icon = ExtResource("1_voxhc")
+metadata/_custom_type_script = "uid://ln8m4be57rdg"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://btftfhjciuknw"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_ht00f"]
+[ext_resource type="Texture2D" uid="uid://cyv7grvjv7qfx" path="res://assets/sprites/items/spirits/white_rum.png" id="2_0vglo"]
+
+[resource]
+script = ExtResource("1_ht00f")
+name = "White Rum"
+texture = ExtResource("2_0vglo")
+metadata/_custom_type_script = "uid://dygudbfda3sex"

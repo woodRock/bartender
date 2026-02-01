@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="DrinkRecipe" format=3 uid="uid://7r5i7mflrmqs"]
 
-[ext_resource type="Texture2D" uid="uid://dst08bvt7b5ni" path="res://assets/espressor_martini.png" id="1_euujg"]
-[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/drink_recipe.gd" id="2_ikl8n"]
+[ext_resource type="Texture2D" uid="uid://dst08bvt7b5ni" path="res://assets/sprites/items/drinks/espressor_martini.png" id="1_euujg"]
+[ext_resource type="Script" uid="uid://ln8m4be57rdg" path="res://scripts/resources/drink_recipe.gd" id="2_ikl8n"]
 
 [resource]
 script = ExtResource("2_ikl8n")

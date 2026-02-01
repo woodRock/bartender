@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://dlwfxcuxs7viy"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_uqb47"]
+[ext_resource type="Texture2D" uid="uid://v0u7bi636hxn" path="res://assets/sprites/items/spirits/vodka.png" id="2_4267b"]
+
+[resource]
+script = ExtResource("1_uqb47")
+name = "Vodka"
+texture = ExtResource("2_4267b")
+color = Color(0.37254903, 1, 1, 1)
+metadata/_custom_type_script = "uid://dygudbfda3sex"

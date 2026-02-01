@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="IngredientData" format=3 uid="uid://b8puo4wwwyabb"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_al8jj"]
+[ext_resource type="Texture2D" uid="uid://c0k4h1smcxw5a" path="res://assets/sprites/items/mixers/orange.webp" id="2_pd6ck"]
+
+[resource]
+script = ExtResource("1_al8jj")
+name = "Orange"
+type = "Mixer"
+texture = ExtResource("2_pd6ck")
+color = Color(1, 0.64705884, 0, 1)
+initial_scale = Vector2(2, 2)
+metadata/_custom_type_script = "uid://dygudbfda3sex"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://c20402nhei5jc"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_1v3r1"]
+[ext_resource type="Texture2D" uid="uid://gdwgvhyalu6p" path="res://assets/sprites/items/ingredients/salt.webp" id="2_0rmic"]
+
+[resource]
+script = ExtResource("1_1v3r1")
+name = "Salt"
+type = "Ingredient"
+texture = ExtResource("2_0rmic")
+metadata/_custom_type_script = "uid://dygudbfda3sex"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="IngredientData" format=3 uid="uid://b4l4s422fsypp"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_vchqx"]
+[ext_resource type="Texture2D" uid="uid://ct0wrw33bsr7w" path="res://assets/sprites/items/liqueurs/vermouth.webp" id="2_7ey3x"]
+
+[resource]
+script = ExtResource("1_vchqx")
+name = "Vermouth"
+type = "Liqueur"
+texture = ExtResource("2_7ey3x")
+metadata/_custom_type_script = "uid://dygudbfda3sex"

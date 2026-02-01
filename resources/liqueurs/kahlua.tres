@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="IngredientData" format=3 uid="uid://fmhleu8icxdy"]
+
+[ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_4loj6"]
+[ext_resource type="Texture2D" uid="uid://rhy7dov2y1nb" path="res://assets/sprites/items/liqueurs/kahlua.png" id="2_10ol1"]
+
+[resource]
+script = ExtResource("1_4loj6")
+name = "Kahlua"
+type = "Liqueur"
+texture = ExtResource("2_10ol1")
+color = Color(0, 0, 0, 1)
+initial_scale = Vector2(2, 2)
+metadata/_custom_type_script = "uid://dygudbfda3sex"
