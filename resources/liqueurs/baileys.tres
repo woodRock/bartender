@@ -9,4 +9,5 @@ name = "Baileys"
 type = "Liqueur"
 texture = ExtResource("2_saube")
 initial_scale = Vector2(2.5, 2.5)
+density = 2
 metadata/_custom_type_script = "uid://dygudbfda3sex"

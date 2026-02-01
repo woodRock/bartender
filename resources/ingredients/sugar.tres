@@ -9,4 +9,5 @@ name = "Sugar"
 type = "Ingredient"
 texture = ExtResource("2_2g3bx")
 initial_scale = Vector2(0.3, 0.3)
+is_solid = true
 metadata/_custom_type_script = "uid://dygudbfda3sex"

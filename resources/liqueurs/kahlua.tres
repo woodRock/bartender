@@ -10,4 +10,5 @@ type = "Liqueur"
 texture = ExtResource("2_10ol1")
 color = Color(0, 0, 0, 1)
 initial_scale = Vector2(2, 2)
+density = 3
 metadata/_custom_type_script = "uid://dygudbfda3sex"

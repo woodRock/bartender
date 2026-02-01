@@ -8,4 +8,5 @@ script = ExtResource("1_p08up")
 name = "Olive"
 type = "Ingredient"
 texture = ExtResource("2_plov7")
+is_solid = true
 metadata/_custom_type_script = "uid://dygudbfda3sex"

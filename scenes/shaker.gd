@@ -1,113 +1,83 @@
 extends Area2D
 
-signal drink_served(ingredients: Array)
+signal drink_served(poured_ingredients: Array)
 
-# --- Audio Preloads ---
-var snd_ice = preload("res://assets/sounds/ice.mp3")
-var snd_serve = preload("res://assets/sounds/shake_and_pour.mp3")
+@onready var progress_bar = $Sprite2D/TextureProgressBar
 
-# --- Nodes ---
-@onready var result_sprite = $ResultSprite
-@onready var liquid_bar = $Sprite2D/TextureProgressBar 
-@onready var sfx_shaker = AudioStreamPlayer2D.new()
+const BASE_SCALE = Vector2(2.0, 2.0)
+# This defines exactly how many ingredients fill the bar (1/8 = 12.5 per item)
+const FILL_PER_INGREDIENT: float = 12.5 
 
-# --- Ingredient Color Mapping ---
-# Note: Use values between 0.0 and 1.0 for Color()
-var color_map = {
-	"tequila": Color(1.0, 0.85, 0.4),    # Gold
-	"kahlua": Color(0.3, 0.15, 0.05),    # Dark Brown
-	"coffee": Color(0.2, 0.1, 0.0),      # Black Coffee Brown
-	"lime": Color(0.6, 1.0, 0.2),        # Bright Green
-	"mint": Color(0.1, 0.8, 0.2),        # Leaf Green
-	"coke": Color(0.25, 0.1, 0.05),      # Soda Brown
-	"whiskey": Color(0.8, 0.4, 0.1),     # Amber
-	"juice": Color(1.0, 0.7, 0.0),       # Orange/Yellow
-	"vodka": Color(0.9, 0.95, 1.0, 0.6), # Clear/Pale Blue
-	"gin": Color(0.9, 0.95, 1.0, 0.6),   # Clear
-	"sugar": Color(1.0, 1.0, 1.0, 0.9),  # White
-	"salt": Color(1.0, 1.0, 1.0, 0.9)    # White
-}
-
-var current_ingredients: Array = []
+var ingredients_in_shaker: Array = []
+var ingredient_densities: Array = []
 
 func _ready():
-	add_child(sfx_shaker)
-	if result_sprite: result_sprite.visible = false
-	if liquid_bar: 
-		liquid_bar.value = 0
-		liquid_bar.show()
+	if progress_bar:
+		progress_bar.max_value = 100
+		progress_bar.value = 0
+	
+	scale = BASE_SCALE
 	add_to_group("shaker")
 
-func add_ingredient(ingredient_name: String):
-	current_ingredients.append(ingredient_name)
-	
-	# Play Ice SFX
-	sfx_shaker.stream = snd_ice
-	sfx_shaker.pitch_scale = randf_range(0.85, 1.15)
-	sfx_shaker.play()
-	
-	_animate_liquid_fill(ingredient_name)
-	
-	# Squash Impact
-	var original_scale = scale
-	var splash_tween = create_tween()
-	splash_tween.tween_property(self, "scale", original_scale * Vector2(1.1, 0.9), 0.05)
-	splash_tween.tween_property(self, "scale", original_scale, 0.15).set_trans(Tween.TRANS_ELASTIC)
+func add_ingredient(ing_name: String, color: Color, is_solid: bool = false, density: int = 0):
+	# 1. THE GATEKEEPER: Only proceed if this is a NEW ingredient being added
+	# This prevents the bar from filling 60 times a second while pouring.
+	if ingredients_in_shaker.is_empty() or ingredients_in_shaker.back() != ing_name:
+		
+		# Record the ingredient
+		ingredients_in_shaker.append(ing_name)
+		ingredient_densities.append(density)
+		
+		# 2. Increment the progress bar exactly 1/8th of the way
+		if progress_bar:
+			progress_bar.value += FILL_PER_INGREDIENT
+			progress_bar.tint_progress = color
+		
+		# 3. Visual Feedback (Thump)
+		_play_splash_tween()
+		
+		# 4. Density Check (Muddy Mix)
+		if ingredient_densities.size() > 1:
+			if density > ingredient_densities[-2]:
+				_trigger_mix_visual()
 
-func _animate_liquid_fill(last_added: String):
-	if not liquid_bar: return
-	
-	var n = last_added.to_lower()
-	var tween = create_tween()
-	
-	# 1. Update Fill Level
-	tween.tween_property(liquid_bar, "value", current_ingredients.size(), 0.3).set_trans(Tween.TRANS_SINE)
-	
-	# 2. Update Color Logic
-	# If the ingredient is in our map, change the liquid color.
-	# If it's NOT (like Ice), we do nothing, keeping the previous color.
-	for key in color_map.keys():
-		if key in n:
-			tween.parallel().tween_property(liquid_bar, "tint_progress", color_map[key], 0.3)
-			break
+# --- Visual Effects ---
 
-func _input_event(_viewport, event, _shape_idx):
-	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		if current_ingredients.size() > 0:
-			serve_drink()
+func _play_splash_tween():
+	var t = create_tween()
+	t.tween_property(self, "scale", Vector2(BASE_SCALE.x * 1.05, BASE_SCALE.y * 0.95), 0.05)
+	t.tween_property(self, "scale", BASE_SCALE, 0.1).set_trans(Tween.TRANS_ELASTIC)
+
+func _trigger_mix_visual():
+	if progress_bar:
+		var t = create_tween()
+		t.tween_property(progress_bar, "modulate", Color.BROWN, 0.2)
+		t.tween_property(progress_bar, "modulate", Color.WHITE, 0.5)
+
+# --- Gameplay Actions ---
 
 func serve_drink():
-	sfx_shaker.stream = snd_serve
-	sfx_shaker.play()
+	if ingredients_in_shaker.is_empty(): return
+	drink_served.emit(ingredients_in_shaker)
 	
-	var shake_tween = create_tween()
-	shake_tween.tween_property(self, "position:x", position.x + 5, 0.05)
-	shake_tween.tween_property(self, "position:x", position.x - 5, 0.05)
-	shake_tween.tween_property(self, "position:x", position.x, 0.05)
-	
-	drink_served.emit(current_ingredients)
-	
-	var fill_tween = create_tween()
-	fill_tween.tween_property(liquid_bar, "value", 0, 0.4).set_trans(Tween.TRANS_EXPO)
-	current_ingredients.clear()
+	# Reset
+	ingredients_in_shaker.clear()
+	ingredient_densities.clear()
+	if progress_bar:
+		progress_bar.value = 0
 
-func show_finished_drink(tex: Texture2D):
-	if tex == null: return
-	result_sprite.texture = tex
-	result_sprite.visible = true
-	result_sprite.modulate.a = 0
-	
-	var target_size = 180.0 
-	var tex_size = tex.get_size()
-	var scale_factor = target_size / max(tex_size.x, tex_size.y)
-	var final_scale = Vector2(scale_factor, scale_factor)
-	
-	result_sprite.scale = final_scale * 0.4
-	var tween = create_tween().set_parallel(true)
-	tween.tween_property(result_sprite, "modulate:a", 1.0, 0.3)
-	tween.tween_property(result_sprite, "scale", final_scale, 0.5).set_trans(Tween.TRANS_ELASTIC)
-	
-	await get_tree().create_timer(1.8).timeout
-	var fade_out = create_tween()
-	fade_out.tween_property(result_sprite, "modulate:a", 0.0, 0.4)
-	fade_out.finished.connect(func(): result_sprite.visible = false)
+func show_finished_drink(icon_tex: Texture2D):
+	var icon = Sprite2D.new()
+	icon.texture = icon_tex
+	var target_pixel_size: float = 256
+	var tex_size = icon_tex.get_size()
+	var normalized_scale = (target_pixel_size / tex_size.x) / BASE_SCALE.x
+	icon.scale = Vector2(normalized_scale, normalized_scale)
+	var final_scale = icon.scale
+	icon.scale = final_scale * 0.1
+	add_child(icon)
+	icon.position = Vector2(0, -60) 
+	var t = create_tween()
+	t.tween_property(icon, "scale", final_scale, 0.4).set_trans(Tween.TRANS_BACK)
+	t.tween_property(icon, "modulate:a", 0, 0.5).set_delay(1.5)
+	t.tween_callback(icon.queue_free)

@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://dl7mh7pqjfnxp" path="res://scenes/shaker.gd" id="1_2al81"]
 [ext_resource type="Texture2D" uid="uid://dk1cov3ira2g4" path="res://assets/sprites/items/tools/shaker.png" id="2_f2s7m"]
 [ext_resource type="Texture2D" uid="uid://bqlt3xmwmr620" path="res://assets/sprites/ui/white_square.jpg" id="3_kkwqg"]
+[ext_resource type="AudioStream" uid="uid://bope5kb17scrp" path="res://assets/sounds/ice.mp3" id="4_6q7n3"]
+[ext_resource type="AudioStream" uid="uid://b7q7b0vpdede3" path="res://assets/sounds/pour.mp3" id="5_r77re"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f2s7m"]
 size = Vector2(42, 117)
@@ -22,6 +24,7 @@ offset_right = 100.00001
 offset_bottom = -99.99997
 scale = Vector2(1.0160444, 2.9221144)
 max_value = 5.0
+step = 0.1
 fill_mode = 3
 texture_progress = ExtResource("3_kkwqg")
 
@@ -34,3 +37,9 @@ shape = SubResource("RectangleShape2D_f2s7m")
 [node name="Label" type="Label" parent="." unique_id=1607565019]
 offset_right = 40.0
 offset_bottom = 23.0
+
+[node name="IceSFX" type="AudioStreamPlayer2D" parent="." unique_id=1533737154]
+stream = ExtResource("4_6q7n3")
+
+[node name="PourSFX" type="AudioStreamPlayer2D" parent="." unique_id=174450545]
+stream = ExtResource("5_r77re")

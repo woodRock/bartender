@@ -7,3 +7,5 @@ class_name IngredientData
 @export var color: Color = Color.WHITE
 @export var initial_scale: Vector2 = Vector2(1, 1)
 @export var is_can: bool = false
+@export var is_solid: bool = false # True for Ice/Garnishes
+@export var density: int = 1

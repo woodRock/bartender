@@ -10,4 +10,5 @@ ingredients = Array[String](["Kahlua", "Baileys"])
 difficulty = 2
 base_time_limit = 40.0
 icon = ExtResource("1_mrfms")
+is_layered = true
 metadata/_custom_type_script = "uid://ln8m4be57rdg"

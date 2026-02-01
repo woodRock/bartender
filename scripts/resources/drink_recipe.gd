@@ -6,3 +6,4 @@ class_name DrinkRecipe
 @export_range(1, 5) var difficulty: int = 1 # 1 = Easy, 5 = Master Mixologist
 @export var base_time_limit: float = 45.0 # Seconds given to complete
 @export var icon: Texture2D # Optional: for the docket visual
+@export var is_layered: bool = false 

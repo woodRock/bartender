@@ -10,4 +10,5 @@ type = "Ingredient"
 texture = ExtResource("2_gptba")
 color = Color(0.20912063, 0.74566954, 0.15327168, 1)
 initial_scale = Vector2(0.7, 0.7)
+is_solid = true
 metadata/_custom_type_script = "uid://dygudbfda3sex"

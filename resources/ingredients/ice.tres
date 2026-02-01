@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="IngredientResource" format=3 uid="uid://cl76mtgwcy67r"]
+[gd_resource type="Resource" script_class="IngredientData" format=3 uid="uid://cl76mtgwcy67r"]
 
 [ext_resource type="Script" uid="uid://dygudbfda3sex" path="res://scripts/resources/ingredient_resource.gd" id="1_nnh0f"]
 [ext_resource type="Texture2D" uid="uid://yldigi0uipvo" path="res://assets/sprites/items/ingredients/ice.png" id="2_8of4i"]
@@ -9,4 +9,5 @@ name = "Ice"
 type = "Ingredient"
 texture = ExtResource("2_8of4i")
 color = Color(0.35686275, 1, 1, 1)
+is_solid = true
 metadata/_custom_type_script = "uid://dygudbfda3sex"
