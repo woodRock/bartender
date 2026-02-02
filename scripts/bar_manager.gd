@@ -14,6 +14,10 @@ extends Node2D
 @onready var camera = $Camera2D
 @onready var red_flash = $CanvasLayer/RedFlashRect
 
+var snd_bell = preload("res://assets/sounds/bell.mp3")
+@onready var sfx_bell = AudioStreamPlayer.new()
+var has_last_call_rung: bool 
+
 # --- Gameplay State ---
 var score: int = 0
 var orders_completed: int = 0
@@ -37,6 +41,11 @@ func _ready():
 	if summary_ui:
 		summary_ui.next_shift_requested.connect(_start_new_shift)
 		summary_ui.hide()
+		
+	# Last call bell
+	add_child(sfx_bell)
+	has_last_call_rung = false
+	sfx_bell.stream = snd_bell
 	
 	if red_flash:
 		red_flash.modulate.a = 0
@@ -46,6 +55,7 @@ func _ready():
 func _start_new_shift():
 	get_tree().paused = false 
 	is_shift_active = true
+	has_last_call_rung = false
 	orders_completed = 0
 	orders_missed = 0
 	score = 0
@@ -79,6 +89,11 @@ func _process(delta):
 		# Only look for hovers if we aren't already dragging something
 		if grabbed_item == null:
 			_handle_hover_highlight()
+		
+		# Play the bell at last call (i.e., final 10 seconds).
+		if time_left <= 10:
+			if not has_last_call_rung:
+				_trigger_last_call()
 		
 		if time_left <= 0:
 			_end_shift()
@@ -214,6 +229,10 @@ func _on_order_expired(docket):
 	orders_missed += 1
 	if camera and camera.has_method("apply_shake"):
 		camera.apply_shake(10.0)
+		
+func _trigger_last_call() -> void:
+	has_last_call_rung = true 
+	sfx_bell.play()
 
 func _end_shift():
 	is_shift_active = false
